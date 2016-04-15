@@ -13,7 +13,7 @@ Observables和Subjects是两个“生产”实体。Observer和Subsribers是两�
 
 ## 创建Observable
 
-* Observable.create()
+### Observable.create()
 
 ```  
 
@@ -54,7 +54,7 @@ Observables和Subjects是两个“生产”实体。Observer和Subsribers是两�
 
 ```
 
-* Observable.from()
+### Observable.from()
 
 如果现在是一个序列，我们可以通过Observable.from()来发射每一个item而不是通过foreach来遍历再发射。
 
@@ -95,7 +95,7 @@ Observables和Subjects是两个“生产”实体。Observer和Subsribers是两�
 
 ```
 
-* Observable.just()
+### Observable.just()
 
 如果我们已经定义了一个方法，可以通过just来转变为Observable. just方法可以传入1到9个参数，它会按照传入的顺序来发射它们。也可以传入数组或者list,不过不会发射每个元素，而是发射整个数组或者列表。
 
@@ -129,4 +129,5 @@ Observables和Subjects是两个“生产”实体。Observer和Subsribers是两�
 
 ```
 
-* Observable.empty(), Observable.throw(), Observable.never();
+### Observable.empty(), Observable.throw(), Observable.never();
+当需要Observable不再发射数据并正常结束，可以使用empty. 当需要一个不发射数据并以错误结束时，可以使用throw.当需要一个不会发射数据也不会结束的Observable,可以使用nerver.
