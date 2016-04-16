@@ -9,8 +9,14 @@
     android:paddingTop="@dimen/activity_vertical_margin">
 
     <ImageView
-        android:id="@+id/image_view"
+        android:id="@+id/image_left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/image_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right" />
 
 </FrameLayout>
